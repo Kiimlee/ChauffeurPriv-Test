@@ -30,11 +30,12 @@ class TableViewSearchBar : UITableViewController {
             // street name
             selectedItem.thoroughfare ?? "",
             comma,
+            // postal code
+            selectedItem.postalCode ?? "",
+            comma,
             // city
             selectedItem.locality ?? "",
-            secondSpace,
-            // state
-            selectedItem.administrativeArea ?? ""
+            secondSpace
         )
         return addressLine
     }
@@ -84,6 +85,8 @@ extension TableViewSearchBar {
         mapViewMapBox?.zoomLevel = 14
         let point = MGLPointAnnotation()
         point.coordinate = CLLocationCoordinate2D(latitude: (mapViewMapBox?.latitude)!, longitude: (mapViewMapBox?.longitude)!)
+        point.title = selectedItem.name
+        point.subtitle = selectedItem.title
         mapViewMapBox?.addAnnotation(point)
 
         dismiss(animated: true, completion: nil)
