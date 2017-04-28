@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>ChauffeurPrivéTest a besoin de connaître votre position pour mieux vous satisfaire</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1Ijoic3RyZWV0cnBnIiwiYSI6ImNpb2Jsc2o5MTA0N2F2NmtxZjA2YWk0d3IifQ.VfDNLdfjRImDQH-Fz5C8DQ</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
